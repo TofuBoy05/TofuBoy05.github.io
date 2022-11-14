@@ -17,7 +17,7 @@
 </head>
 
 <body><script type="text/javascript" src="https://cdn.jsdelivr.net/gh/space10-community/conversational-form@1.0.1/dist/conversational-form.min.js" crossorigin></script>
-    <div class="d-flex align-items-center" style="height: 100vh;"><script>
+    <div class="d-flex align-items-center dark-theme" id="cf-context" style="height: 100vh;"><script>
     window.onload = function() {
   var testValidation = function(dto, success, error) {
     console.log("dto....", dto, success, error);
@@ -42,13 +42,14 @@
     flowStepCallback: function(dto, success, error) {
       success();
     },
+    theme: 'dark',
     submitCallback: function() {
       // remove Conversational Form
     //   alert("You made it!");
       console.log("Form submitted...");
       conversationalForm.addRobotChatResponse("See you on the other side.")
       setTimeout(() => {
-        window.location.replace("http://192.168.1.3:8000/etech/g6/sdg");
+        window.location.replace("tofuboy05.github.io/etech/g6/sdg");
     }, 3000);
       
     }
@@ -56,7 +57,7 @@
 };
 </script>
 
-<form id="my-form-element" cf-form >
+<form id="my-form-element" >
     <fieldset cf-questions="Hello! Are you ready to dive into the world that we, Group 6, worked hard to create?" cf-error="Input is invalid">
         <input type="radio" name="ready" id="intro-yes" value="yes" />
         <label for="intro-yes">Yes</label>

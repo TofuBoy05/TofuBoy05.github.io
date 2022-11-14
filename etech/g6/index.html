@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Charlz Felipe Dev</title>
+    <meta name="twitter:description" content="Charlz Felipe development website.">
+    <meta name="description" content="Charlz Felipe development website.">
+    <meta name="twitter:title" content="Charlz Felipe Dev">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.2.0/dist/lux/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&amp;display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <link rel="stylesheet" href="../../assets/css/untitled.css">
+</head>
+
+<body><script type="text/javascript" src="https://cdn.jsdelivr.net/gh/space10-community/conversational-form@1.0.1/dist/conversational-form.min.js" crossorigin></script>
+    <div class="d-flex align-items-center" style="height: 100vh;"><script>
+    window.onload = function() {
+  var testValidation = function(dto, success, error) {
+    console.log("dto....", dto, success, error);
+    if (dto.text.indexOf("world") != -1) return success();
+    return error();
+  };
+
+  const dispatcher = new cf.EventDispatcher();
+  dispatcher.addEventListener(
+    cf.ChatListEvents.CHATLIST_UPDATED,
+    function(event) {
+      // console.log("chat list updated...", event);
+    },
+    false
+  );
+
+  var conversationalForm = new cf.ConversationalForm({
+    formEl: document.getElementById("my-form-element"),
+    context: document.getElementById("cf-context"),
+    eventDispatcher: dispatcher,
+    preventAutoFocus: true,
+    flowStepCallback: function(dto, success, error) {
+      success();
+    },
+    submitCallback: function() {
+      // remove Conversational Form
+    //   alert("You made it!");
+      console.log("Form submitted...");
+      conversationalForm.addRobotChatResponse("See you on the other side.")
+      setTimeout(() => {
+        window.location.replace("http://192.168.1.3:8000/etech/g6/sdg");
+    }, 3000);
+      
+    }
+  });
+};
+</script>
+
+<form id="my-form-element" cf-form >
+    <fieldset cf-questions="Hello! Are you ready to dive into the world that we, Group 6, worked hard to create?" cf-error="Input is invalid">
+        <input type="radio" name="ready" id="intro-yes" value="yes" />
+        <label for="intro-yes">Yes</label>
+    </fieldset>
+
+    <input type="text" cf-questions="Great! However, would you mind furnishing me with your name? A nickname is also plausible." cf-conditional-ready="yes" id="name" />
+
+    <fieldset cf-questions="Alright {name}. I'll be walking you through our work based on your understanding of the topic. Are you familiar with the UN's SDGs?">
+
+        <input type="radio" name="familiar" id="familiar-no" value="no">
+        <label for="familiar-yes">No</label>
+
+        <input type="radio" name="familiar" id="familiar-yes" value="yes" disabled>
+        <label for="familiar-yes">Yes</label>
+    </fieldset>
+
+
+
+    <fieldset cf-questions="Alright, I'll give you a quick explanation of the 17 goals in the UN's SDGs. Sit back and get cozy.">
+        <input type="radio" name="step-1" id="step-1" value="step-1" cf-conditional-familiar="no">
+        <label for="step-1">Start</label>
+    </fieldset>
+
+    <fieldset cf-questions="SDG stands for <strong>SustainableDevelopment Goals</strong> . Each of these goals aim to solve a world problem. They apply to all nations, to ensure that no one is left behind.
+    
+They are a call to action to end poverty and inequality, protect the planet, and ensure that all people enjoy health, justice, and prosperity.">
+        <input type="radio" name="step-2" id="step-2" value="step-2" cf-conditional-familiar="no">
+        <label for="step-1">Next</label>
+    </fieldset>
+
+    <fieldset cf-questions="Group 6 will be presenting the 16th of the SDGs, promoting peaceful and inclusive societies for sustainable development, provide access to justice for all and build effective, accountable and inclusive institutions at all levels.">
+        <input type="radio" name="step-3" id="step-3" value="step-3" cf-conditional-familiar="no">
+        <label for="step-1">Next</label>
+    </fieldset>
+    
+    <fieldset cf-questions="Now that you are equiped with the basic knowledge about SDGs, the world shall open itself before you, a being with noble heart. <strong>Welcome to our world, {name}.</strong>">
+        <input type="radio" name="step-4" id="step-4" value="step-4" cf-conditional-familiar="no">
+        <label for="step-1">Next</label>
+    </fieldset>
+
+
+    <fieldset cf-questions="Since you are already familiar with UN's SDGs, I will be directing you to our main page! See you there, {name}!" >
+        <input type="radio" name="end" id="end" value="end" cf-conditional-familiar="yes">
+        <label for="end">Goodbye!</label>
+    </fieldset>
+
+
+
+
+</form></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+</body>
+
+</html>

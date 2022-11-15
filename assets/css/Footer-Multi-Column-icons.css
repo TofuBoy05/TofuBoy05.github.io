@@ -83,3 +83,8 @@ a {
   background-color: black;
 }
 
+.article-card {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+

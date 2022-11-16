@@ -49,7 +49,8 @@
       // remove Conversational Form
     //   alert("You made it!");
       console.log("Form submitted...");
-      conversationalForm.addRobotChatResponse("See you on the other side.")
+      conversationalForm.addRobotChatResponse("Thank you! Redirecting you now~")
+      document.getElementById("my-form-element").submit();
       setTimeout(() => {
         window.location.replace("https://tofuboy05.github.io/etech/g6/sdg");
     }, 2000);
@@ -57,57 +58,63 @@
     }
   });
 };
+
 </script>
 
-<form id="my-form-element" style="visibility:hidden;">
-    <fieldset cf-questions="Hello! Are you ready to dive into the world that we, Group 6, worked hard to create?" cf-error="Input is invalid">
-        <input type="radio" name="ready" id="intro-yes" value="yes" />
-        <label for="intro-yes">Yes</label>
+<form id="my-form-element" style="visibility:hidden;" action="https://api.sheetmonkey.io/form/gT1KPAMhysRWHRWiXQVJu8" method="POST">
+    <fieldset cf-questions="Hello! Before we start, we have prepared 5 questions for you to answer! Do you want to skip?">
+        <input type="radio" name="skip" id="skip-no" value="no">
+        <label for="skip-no">No</label>
+
+        <input type="radio" name="skip" id="skip-yes" value="yes">
+        <label for="skip-yes">Skip</label>
     </fieldset>
 
-    <input type="text" cf-questions="Great! However, would you mind furnishing me with your name? A nickname is also plausible." cf-conditional-ready="yes" id="name" />
+    <input type="text" cf-questions="Great! Please tell us your first name! A nickname is also okay~" cf-conditional-skip="no" id="name" name="Name">
 
-    <fieldset cf-questions="Alright {name}. I'll be walking you through our work based on your understanding of the topic. Are you familiar with the UN's SDGs?">
+    <fieldset cf-questions="Alright {name}! For statistics purposes, can you tell us your sexual orientation? (This is not associated with your name, and is tallied separately, your privacy is safe with us!)">
+        <input type="radio" name="gender" id="gender-het" value="Heterosexual" cf-conditional-skip="no">
+        <label for="gender-het">Heterosexual</label>
 
-        <input type="radio" name="familiar" id="familiar-no" value="no">
-        <label for="familiar-yes">No</label>
+        <input type="radio" name="gender" id="gender-gay" value="Gay" cf-conditional-skip="no">
+        <label for="gender-gay">Gay</label>
 
-        <input type="radio" name="familiar" id="familiar-yes" value="yes" disabled>
-        <label for="familiar-yes">Yes</label>
+        <input type="radio" name="gender" id="gender-les" value="Lesbian" cf-conditional-skip="no">
+        <label for="gender-les">Lesbian</label>
+
+        <input type="radio" name="gender" id="gender-bi" value="Bisexual" cf-conditional-skip="no">
+        <label for="gender-bi">Bisexual</label>
+
+        <input type="radio" name="gender" id="gender-trans" value=Transgender" cf-conditional-skip="no">
+        <label for="gender-trans">Transgender</label>
+
+        <input type="radio" name="gender" id="gender-other" value="Other" cf-conditional-skip="no">
+        <label for="gender-other">Other</label>
+
+        <input type="radio" name="gender" id="gender-none" value="Prefer not to say" cf-conditional-skip="no">
+        <label for="gender-none">Prefer not to say</label>
+
+        
+
+    </fieldset>
+
+    <fieldset cf-questions="Thank you! Next, do you feel unsafe when walking alone in your community?">
+        <input type="radio" name="FeelUnsafe" id="feel-unsafe-yes" value="yes" cf-conditional-skip="no">
+        <label for="feel-unsafe-yes">Yes</label>
+
+        <input type="radio" name="FeelUnsafe" id="feel-unsafe-no" value="no" cf-conditional-skip="no">
+        <label for="feel-unsafe-no">No</label>
     </fieldset>
 
 
 
-    <fieldset cf-questions="Alright, I'll give you a quick explanation of the 17 goals in the UN's SDGs. Sit back and get cozy.">
-        <input type="radio" name="step-1" id="step-1" value="step-1" cf-conditional-familiar="no">
-        <label for="step-1">Start</label>
+    <fieldset cf-questions="Are you willing to help us make a better society?">
+        <input type="radio" name="Willing to Help" id="willing-yes" value="yes" cf-conditional-skip="no">
+        <label for="willing-yes">Yes</label>
+
+        <input type="radio" name="Willing to Help" id="willing-no" value="no" cf-conditional-skip="no">
+        <label for="willing-no">No</label>
     </fieldset>
-
-    <fieldset cf-questions="SDG stands for <strong>Sustainable Development Goals</strong> . Each of these goals aim to solve a world problem. They apply to all nations, to ensure that no one is left behind.
-    
-They are a call to action to end poverty and inequality, protect the planet, and ensure that all people enjoy health, justice, and prosperity.">
-        <input type="radio" name="step-2" id="step-2" value="step-2" cf-conditional-familiar="no">
-        <label for="step-1">Next</label>
-    </fieldset>
-
-    <fieldset cf-questions="Group 6 will be presenting the 16th of the SDGs, promoting peaceful and inclusive societies for sustainable development, provide access to justice for all and build effective, accountable and inclusive institutions at all levels.">
-        <input type="radio" name="step-3" id="step-3" value="step-3" cf-conditional-familiar="no">
-        <label for="step-1">Next</label>
-    </fieldset>
-    
-    <fieldset cf-questions="Now that you are equiped with the basic knowledge about SDGs, the world shall open itself before you, a being with noble heart. <strong>Welcome to our world, {name}.</strong>">
-        <input type="radio" name="step-4" id="step-4" value="step-4" cf-conditional-familiar="no">
-        <label for="step-1">Next</label>
-    </fieldset>
-
-
-    <fieldset cf-questions="Since you are already familiar with UN's SDGs, I will be directing you to our main page! See you there, {name}!" >
-        <input type="radio" name="end" id="end" value="end" cf-conditional-familiar="yes">
-        <label for="end">Goodbye!</label>
-    </fieldset>
-
-
-
 
 </form></div><script type="text/javascript" src="https://cdn.jsdelivr.net/gh/space10-community/conversational-form@1.0.1/dist/conversational-form.min.js" crossorigin></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>

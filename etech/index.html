@@ -19,7 +19,7 @@
 </head>
 
 <body style="font-family: Poppins, sans-serif;background: rgb(31,32,34);">
-    <div class="d-flex flex-column align-items-center">
+    <div class="d-flex flex-column align-items-center etech-welcome-container" style="height: 100vh;background: url(&quot;../assets/img/stacked-waves-haikei.svg&quot;);background-size: cover;">
         <nav class="navbar navbar-light navbar-expand-md" style="width: 100%;max-width: 720px;">
             <div class="container-fluid"><a class="navbar-brand" href="https://tofuboy05.github.io">Charlz Felipe</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1" style="border-width: 0px;"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navcol-1">
@@ -30,8 +30,25 @@
                 </div>
             </div>
         </nav>
-        <div class="d-flex flex-column justify-content-center align-items-center" data-aos="zoom-in" data-aos-duration="700" style="height: 80vh;">
-            <h1 class="text-center" style="margin: 16px;">Welcome</h1><a class="btn btn-light" role="button" href="g6/">start</a>
+        <div class="d-flex flex-column justify-content-center align-items-center" data-aos="fade" data-aos-duration="1050" style="height: 80vh;">
+            <h1 class="text-center neon-text" style="margin: 16px;margin-bottom: 2px;">SDG 16</h1>
+            <h1 class="text-center neon-text" style="margin: 16px;font-size: 18px;">Presented by Group 6</h1>
+
+<button class="neon-button" id="start" onclick="btn_change()">
+    
+</button>
+
+<script>
+
+    function btn_change() {
+        btn.innerHTML = '<div class="spinner-border" role="status"><span class="sr-only" style="font-siz"></span></div>'
+        window.location.href = "https://charlz.ga/etech/g6";
+    }
+
+    const btn = document.getElementById("start");
+    btn.value = 'value';
+    btn.innerHTML = 'Start'
+</script>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>

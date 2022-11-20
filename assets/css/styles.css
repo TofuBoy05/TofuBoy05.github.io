@@ -1,3 +1,9 @@
+:root {
+  --neon: rgb(64, 54, 246);
+  --neon-text: rgb(97, 90, 227);
+  --neon-blue: rgb(64, 54, 246);
+}
+
 body {
   color: white !important;
 }
@@ -38,5 +44,101 @@ h1 {
   align-items: center;
   justify-content: space-between;
   padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
+}
+
+.neon-text {
+  color: var(--neon-text);
+  text-shadow: 0 0 0.5em var(--neon);
+  font-weight: 800;
+}
+
+.sdg ::-moz-selection {
+  color: rgb(255, 255, 255);
+  background: rgb(8, 134, 119);
+}
+
+.sdg ::selection {
+  color: rgb(255, 255, 255);
+  background: rgb(8, 134, 119);
+}
+
+.neon-button {
+  font-size: 1rem;
+  color: var(--neon-blue);
+  display: inline-block;
+  cursor: pointer;
+  border: var(--neon-blue) 3px solid;
+  border-radius: 10px;
+  text-decoration: none;
+  padding: 0.4rem 2rem;
+  background: none;
+  text-shadow: 0 0 0.125em #7199ff, 0 0 0.45em currentColor;
+  box-shadow: inset 0 0 0.6em var(--neon-blue), 0 0 0.6em 0 var(--neon-blue);
+  position: relative;
+  transition: background 200ms linear;
+}
+
+.neon-button::before {
+  pointer-events: none;
+  content: '';
+  position: absolute;
+  background: var(--neon-blue);
+  top: 150%;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  transform: perspective(4em) rotateX(60deg);
+  filter: blur(1em);
+  opacity: 60%;
+}
+
+.neon-button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 2em 0.2em var(--neon-blue);
+  opacity: 0;
+  transition: opacity 200ms linear;
+}
+
+.neon-button:hover, .neon-button:focus {
+  background: var(--neon-blue);
+  color: white;
+  transition: color 200ms linear;
+}
+
+.neon-button:hover::before, .neon-button:focus::before {
+  opacity: 110%;
+  transition: opacity 200ms linear;
+}
+
+.neon-button:hover::after, .neon-button:focus::after {
+  opacity: 1;
+  font-size: 1rem;
+}
+
+.spinner-border {
+  width: 1rem;
+  height: 1rem;
+  border-width: 3px;
+}
+
+.article-button {
+  border-radius: 0.8em;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 0.4rem rgba(255, 255, 255, 0.529);
+  border-width: 0px;
+}
+
+.article-button:hover, .article-button:focus, .article-button:active, .article-button:active:hover {
+  border-radius: 0.8em;
+  background-color: var(--neon);
+  box-shadow: 0 0 1rem var(--neon);
+  color: white;
+  transition: all 100ms linear;
+  border-width: 0px!important;
 }
 

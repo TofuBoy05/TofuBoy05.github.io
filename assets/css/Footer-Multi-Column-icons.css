@@ -93,3 +93,36 @@ a {
   background-color: #232526!important;
 }
 
+@media (min-width: 300px) {
+  .banner-chat {
+    position: absolute;
+    height: 5rem;
+    top: 0;
+    width: 100%;
+    background: rgb(0,104,157);
+    z-index: 1000;
+  }
+}
+
+@media (min-width: 576px) {
+  .banner-chat {
+    height: 7rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .sdg_logo {
+    position: absolute;
+    right: 20px;
+    visibility: visible!important;
+  }
+}
+
+.sdg_logo {
+  visibility: hidden;
+}
+
+.sdg16logo {
+  position: absolute;
+}
+

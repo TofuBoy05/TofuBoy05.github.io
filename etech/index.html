@@ -23,11 +23,10 @@
 <body style="font-family: Poppins, sans-serif;background: rgb(31,32,34);">
     <div class="d-flex flex-column align-items-center etech-welcome-container" style="height: 100vh;background: url(&quot;../assets/img/stacked-waves-haikei.svg&quot;);background-size: cover;">
         <nav class="navbar navbar-light navbar-expand-md" style="width: 100%;max-width: 720px;">
-            <div class="container-fluid"><a class="navbar-brand" href="https://tofuboy05.github.io">Charlz Felipe</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1" style="border-width: 0px;"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="container-fluid"><a class="navbar-brand" href="https://tofuboy05.github.io">GROUP 6</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1" style="border-width: 0px;"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navcol-1">
                     <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link active" href="#">Etech</a></li>
-                        <li class="nav-item"><a class="nav-link" href="https://www.hoyolab.com/accountCenter/postList?id=78394798">hoyolab</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="#">Collaborators</a></li>
                     </ul>
                 </div>
             </div>
@@ -44,8 +43,13 @@
 
     function btn_change() {
         btn.innerHTML = '<div class="spinner-border" role="status"><span class="sr-only" style="font-siz"></span></div>'
-        window.location.href = "https://charlz.ga/etech/g6";
-    }
+        setTimeout(() => {
+            window.location.href = "https://charlz.ga/etech/g6";
+    }, 2000);
+        }
+
+
+        
 
     const btn = document.getElementById("start");
     btn.value = 'value';

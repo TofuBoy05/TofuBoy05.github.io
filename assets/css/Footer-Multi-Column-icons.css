@@ -135,9 +135,16 @@ a {
   font-family: 'Poppins';
   font-weight: 700;
   letter-spacing: 0px;
+  padding: 20px;
 }
 
 .article-body {
   background-color: black;
+}
+
+@media (min-width: 768px) {
+  .article-title {
+    font-size: 40px!important;
+  }
 }
 

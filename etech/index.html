@@ -32,8 +32,25 @@
             </div>
         </nav>
         <div class="d-flex flex-column justify-content-center align-items-center" data-aos="fade" data-aos-duration="1050" style="height: 90vh;">
-            <h1 class="text-center neon-text" style="margin: 16px;margin-bottom: 2px;">SDG 16</h1>
-            <h1 class="text-center neon-text" style="margin: 16px;font-size: 18px;">Presented by Group 6</h1>
+            <h1 class="text-center neon-text startertext" style="margin: 16px;margin-bottom: 2px;">According to past visitors of this website...</h1><h1 id="subtext" class="text-center neon-text startertext" style="margin: 16px;font-size: 18px;">_% of past visitors felt unsafe in their community.</h1>
+            <h1 class="text-center neon-text startertext" id="subtext-1" style="font-size: 14px;">This data is updated live.</h1><script>
+    const url = "https://opensheet.elk.sh/1K3HMh0fBSoGuHfNEYlo-b-m7FFX_j6Dp-8mJ85S8xmE/Sheet2"
+    fetch(url)
+    .then(response => response.json())
+    .then(data => {
+        // console.log(data[0]);
+        const responseNum = data[0]["Number of response"];
+        const feelUnsafe = data[0]["FeelUnsafe"];
+        const percentage = feelUnsafe/responseNum
+        const floored = Math.floor(percentage*100)
+        document.getElementById("subtext").innerHTML = floored + "% of past visitors felt unsafe in their community."
+        document.getElementById("total-responses").innerHTML = "Total Responses: " + responseNum
+        
+    })
+
+    
+</script>
+            <h1 class="text-center neon-text startertext" id="total-responses" style="font-size: 14px;">Total Responses: _<br></h1>
 
 <button class="neon-button" id="start" onclick="btn_change()">
     

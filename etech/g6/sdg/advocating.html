@@ -32,6 +32,33 @@
             <p class="article-content">For women to feel safe in cities, governments must ensure that victims of violence have access to treatment services. Examples of victim assistance services include, among other things, the provision of assistance centers, specialized health services, legal support, and access to justice. It is critical that strategies be comprehensive, taking into account not only treatment but also violence prevention and the promotion of women and girls' human rights. Governments have expanded services for survivors and perpetrators under the banner of safe cities' advocacy initiatives in some cities. Some illustrative examples are provided below.<br></p>
             <p class="article-content">To advance minorities' protection in accordance with the principle of, they should be free of discrimination and have equal access to social services. The Employment in the public and private sectors, including positive action In many cases, inequalities between groups in their enjoyment of economic, social, and cultural rights are the root causes of human rights violations. As a result, careful consideration must be given to the implementation of the International Convention on the Elimination of All Forms of Racial Discrimination based on race and the International Covenant on Economic, Social, and Cultural Right. The patriarchal culture has kept women in subordinate positions in all aspects of life, from political decision-making to family circles. Empowering women and raising awareness of women's rights among men and women contributes to limiting the power of gender stereotypes, which prevent women from fully participating in social, professional, and public life and deprive them of full citizenship. Women's marginalization, violence, and discrimination are not fatalities; the feminine nature does not exist; it is a male invention to keep women out of history.<br></p>
             <p class="article-content">Minority rights are about ensuring respect for distinctive identities while ensuring that any differential treatment towards groups or persons belonging to such groups does not mask discriminatory practices and policies. Therefore, positive action is required to respect cultural, religious and linguistic diversity, and acknowledge that minorities enrich society through this diversity.<br></p>
+            <div><button class="btn btn-primary article-button" id="show-comment" type="button" onclick="showComments()">Show Comments</button>
+                <div id="comments" style="background: #ffffff;border-radius: 7px;"><span class="spinner-border spinner-border-sm" role="status" id="comment-spinner" style="color: rgb(0,0,0);margin: 20px;"></span><div id="fb-root"></div>
+
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v15.0&appId=1515711478909036&autoLogAppEvents=1" nonce="KClW95q2"></script>
+
+<div class="fb-comments" data-href="https://etech.charlz.ga/advocating" data-lazy="true" data-width="" data-numposts="5" data-order-by="reverse_time" id="fb-comments"></div>
+
+<script>
+function showComments() {
+   document.getElementById('comments').style.display = "block";
+   document.getElementById('show-comment').style.display = "none";
+   document.getElementById('comments').classList.add("d-flex");
+   document.getElementById('comments').classList.add("justify-content-center");
+   
+   
+}
+
+
+window.onload = function() {
+    FB.Event.subscribe('xfbml.render', function(response) {
+        document.getElementById('comment-spinner').style.display = "none";
+    });
+};
+</script>
+
+</div>
+            </div>
         </div>
         <footer style="margin: 20px 0px;">
             <p style="font-size: 12px;">Made with ♥ by Group 6.</p>

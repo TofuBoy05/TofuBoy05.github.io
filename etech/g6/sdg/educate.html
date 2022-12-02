@@ -33,6 +33,33 @@
             <p class="article-content">There are ways to prevent getting into a dangerous situation, but it's unfortunate that many violent situations are the result of being in the wrong place at the wrong time. Always be aware of your surroundings. Know how to escape if necessary. Make sure your mobile phone is with you, that it is charged, and that it is topped off with enough credit. Be aware of your surroundings. Know how to make an assistance call. Make sure your phone has important contact information, such as your parents' phone number and perhaps a cab company. And trust your instincts. This might be your best opportunity to escape a dangerous situation or a way to get help. Your senses and intuition.</p>
             <p class="article-content">Understanding that harmful situations exist is the most crucial step you can take to prevent them. Don't think that only other people experience negative things. Keep the aforementioned advice in mind when you're out and about, whether it's during the day or at night, and stay safe.</p>
         </div>
+        <div><button class="btn btn-primary article-button" id="show-comment" type="button" onclick="showComments()">Show Comments</button>
+            <div id="comments" style="background: #ffffff;border-radius: 7px;"><span class="spinner-border spinner-border-sm" role="status" id="comment-spinner" style="color: rgb(0,0,0);margin: 20px;"></span><div id="fb-root"></div>
+
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v15.0&appId=1515711478909036&autoLogAppEvents=1" nonce="KClW95q2"></script>
+
+<div class="fb-comments" data-href="https://etech.charlz.ga/educate" data-lazy="true" data-width="" data-numposts="5" data-order-by="reverse_time" id="fb-comments"></div>
+
+<script>
+function showComments() {
+   document.getElementById('comments').style.display = "block";
+   document.getElementById('show-comment').style.display = "none";
+   document.getElementById('comments').classList.add("d-flex");
+   document.getElementById('comments').classList.add("justify-content-center");
+   
+   
+}
+
+
+window.onload = function() {
+    FB.Event.subscribe('xfbml.render', function(response) {
+        document.getElementById('comment-spinner').style.display = "none";
+    });
+};
+</script>
+
+</div>
+        </div>
         <footer style="margin: 20px 0px;">
             <p style="font-size: 12px;">Made with ♥ by Group 6.</p>
         </footer>

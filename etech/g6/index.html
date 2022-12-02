@@ -75,7 +75,7 @@
 
     <input type="text" cf-questions="Great! Please tell us your first name! A nickname is also okay~" cf-conditional-skip="no" id="name" name="Name">
 
-    <fieldset cf-questions="Alright {name}! For statistics purposes, can you tell us your sexual orientation? (This is not associated with your name, and is tallied separately, your privacy is safe with us!)">
+    <!-- <fieldset cf-questions="Alright {name}! For statistics purposes, can you tell us your sexual orientation? (This is not associated with your name, and is tallied separately, your privacy is safe with us!)">
         <input type="radio" name="gender" id="gender-het" value="Heterosexual" cf-conditional-skip="no">
         <label for="gender-het">Heterosexual</label>
 
@@ -99,7 +99,7 @@
 
         
 
-    </fieldset>
+    </fieldset> -->
 
     <fieldset cf-questions="Thank you! Next, do you feel unsafe when walking alone in your community?">
         <input type="radio" name="FeelUnsafe" id="feel-unsafe-yes" value="yes" cf-conditional-skip="no">
@@ -120,6 +120,21 @@
     </fieldset>
 
 </form></div><script type="text/javascript" src="https://cdn.jsdelivr.net/gh/space10-community/conversational-form@1.0.1/dist/conversational-form.min.js" crossorigin></script>
+<script>
+    function loadAPI() {
+        var js = document.createElement('script');
+        js.src = '//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=YOUR_APP_ID&version=v2.0';
+        document.body.appendChild(js);
+    }
+
+    window.onscroll = function () {
+        var rect = document.getElementById('comments').getBoundingClientRect();
+        if (rect.top < window.innerHeight) {
+            loadAPI();
+            window.onscroll = null;
+        } 
+    }
+</script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../../assets/js/bs-init.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>

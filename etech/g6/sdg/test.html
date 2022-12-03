@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Charlz Felipe Dev</title>
+    <meta property="fb:admins" content="charlzfelipe02">
+    <meta property="fb:app_id" content="1515711478909036">
+    <meta name="twitter:description" content="Charlz Felipe development website.">
+    <meta name="description" content="Charlz Felipe development website.">
+    <meta name="twitter:title" content="Charlz Felipe Dev">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.2.0/dist/lux/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700&amp;display=swap">
+    <link rel="stylesheet" href="../../../assets/css/Footer-Multi-Column-icons.css">
+    <link rel="stylesheet" href="../../../assets/css/Hero-Clean-images.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="../../../assets/css/styles.css">
+    <link rel="stylesheet" href="../../../assets/css/untitled.css">
+</head>
+
+<body class="article-body"><script>
+const options = {
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': 'cdedc06a8emshf0ecf7d396c978cp1417abjsne6034952ca0f',
+		'X-RapidAPI-Host': 'world-crime-news1.p.rapidapi.com'
+	}
+};
+
+fetch('https://world-crime-news1.p.rapidapi.com/origins', options)
+	// .then(response => response.json())
+	.then(response => console.log(response))
+	.catch(err => console.error(err));
+</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../../assets/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+</body>
+
+</html>

@@ -159,3 +159,10 @@ a {
   }
 }
 
+.g-site-alert {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  border-radius: 5px;
+}
+

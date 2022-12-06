@@ -166,3 +166,45 @@ a {
   border-radius: 5px;
 }
 
+.ai-heading {
+  text-transform: none!important;
+}
+
+.ai-nav {
+  font-family: 'Poppins';
+  letter-spacing: 0px;
+}
+
+.ai-container {
+  height: calc(100vh - 98px - 5rem);
+}
+
+.ai-page-heading {
+}
+
+@media (min-width: 300px) {
+  #ai-input {
+    width: 300px!important;
+  }
+}
+
+@media (min-width: 576px) {
+  #ai-input {
+    width: 540px!important;
+  }
+}
+
+@media (min-width: 992px) {
+  #ai-input {
+    width: 720px!important;
+  }
+}
+
+.ai-submit {
+  float: right;
+}
+
+#ai-body {
+  background-color: black;
+}
+

@@ -73,46 +73,8 @@
     btn.innerHTML = 'Start'
 </script>
         </div>
-    </div><!-- Messenger Chat Plugin Code -->
-<div id="fb-root"></div>
-
-<!-- Your Chat Plugin code -->
-<div id="fb-customer-chat" class="fb-customerchat">
-</div>
-
-<script>
-
-  var chatbox = document.getElementById('fb-customer-chat');
-  chatbox.setAttribute("page_id", "100201522943662");
-  chatbox.setAttribute("attribution", "biz_inbox");
-</script>
-
-<!-- Your SDK code -->
-<script>
-
-if (window.location == window.parent.location) {
-  window.fbAsyncInit = function() {
-    FB.init({
-      xfbml            : true,
-      version          : 'v15.0'
-    });
-  };
-
-  (function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));
-} else {
-  const fbFrame = document.getElementById('fb-customer-chat');
-  fbFrame.parentNode.removeChild(fbFrame);
-}
-</script>
-    <div class="alert alert-info alert-dismissible g-site-alert" role="alert" data-aos="fade-left" data-aos-duration="600" id="g-site-alert" style="font-size: 13px;max-width: 400px;"><button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button><span>You are viewing this website on Google Sites. <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-messenger">
-                <path d="M0 7.76C0 3.301 3.493 0 8 0s8 3.301 8 7.76-3.493 7.76-8 7.76c-.81 0-1.586-.107-2.316-.307a.639.639 0 0 0-.427.03l-1.588.702a.64.64 0 0 1-.898-.566l-.044-1.423a.639.639 0 0 0-.215-.456C.956 12.108 0 10.092 0 7.76zm5.546-1.459-2.35 3.728c-.225.358.214.761.551.506l2.525-1.916a.48.48 0 0 1 .578-.002l1.869 1.402a1.2 1.2 0 0 0 1.735-.32l2.35-3.728c.226-.358-.214-.761-.551-.506L9.728 7.381a.48.48 0 0 1-.578.002L7.281 5.98a1.2 1.2 0 0 0-1.735.32z"></path>
-            </svg>&nbsp;Messenger function will <strong>not</strong> work. If necessary, go to https://charlz.ga/etech instead.</span></div><script>
+    </div>
+    <div class="alert alert-info alert-dismissible g-site-alert" role="alert" data-aos="fade-left" data-aos-duration="600" id="g-site-alert" style="font-size: 13px;max-width: 400px;"><button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button><span>You are viewing this website on Google Sites.</span></div><script>
 
     const alert = document.getElementById('g-site-alert')
 

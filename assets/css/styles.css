@@ -193,3 +193,25 @@ h1 {
   -webkit-backface-visibility: hidden;
 }
 
+.gradient-text-ai {
+  background: linear-gradient(45deg, rgba(222,31,201,1) 0%, rgba(9,160,245,1) 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.glow {
+  animation: glow 1s ease-in-out infinite alternate;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 20px #e60073, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #0073e6, 0 0 30px #0082e6, 0 0 40px #0058e6, 0 0 60px #002ae6, 0 0 70px #2300e6;
+  }
+}
+

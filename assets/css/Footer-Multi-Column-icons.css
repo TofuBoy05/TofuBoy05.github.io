@@ -208,3 +208,19 @@ a {
   background-color: black;
 }
 
+@media (max-width: 536px) {
+  #premade-qs {
+    display: none;
+  }
+}
+
+@media (min-width: 536px) {
+  #premade-qs-mb {
+    display: none;
+  }
+}
+
+.suggest-btn-mb {
+  margin: 0rem 2rem 1rem;
+}
+

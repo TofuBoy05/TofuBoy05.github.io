@@ -153,9 +153,10 @@ a {
   letter-spacing: 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .crime-rate-h1 {
     font-size: 47.128px;
+    text-align: left!important;
   }
 }
 
@@ -221,6 +222,6 @@ a {
 }
 
 .suggest-btn-mb {
-  margin: 0rem 2rem 1rem;
+  margin: 0rem 1rem 1rem;
 }
 

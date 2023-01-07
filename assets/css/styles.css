@@ -2,6 +2,7 @@
   --neon: rgb(64, 54, 246);
   --neon-text: rgb(97, 90, 227);
   --neon-blue: rgb(64, 54, 246);
+  --neon-pink: rgb(176,67,214);
 }
 
 body {
@@ -213,5 +214,88 @@ h1 {
   to {
     text-shadow: 0 0 20px #0073e6, 0 0 30px #0082e6, 0 0 40px #0058e6, 0 0 60px #002ae6, 0 0 70px #2300e6;
   }
+}
+
+.crime-rate-h1 {
+  transition: all ease 0.7s;
+}
+
+.crime-rate-h1 {
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .how-heading-col {
+    padding: 0px;
+  }
+}
+
+#about-us {
+}
+
+.h2 {
+  color: white;
+  font-size: 30px!important;
+}
+
+.hr {
+  border-top: 1px solid rgb(255, 255, 255);
+}
+
+a {
+  color: white;
+  transition: color linear 0.2s;
+}
+
+a:hover {
+  color: var(--neon-pink);
+}
+
+@media (max-width: 575px) {
+  .h2 {
+    font-size: 25px!important;
+  }
+}
+
+@media (max-width: 575px) {
+  #vid-container {
+    width: 100%!important;
+    height: 200px!important;
+  }
+}
+
+@media (min-width: 768px),(max-width: 991px) {
+  #vid-container {
+    width: 100%!important;
+    height: 500px!important;
+  }
+}
+
+@media (min-width: 576px),(max-width: 767px) {
+  #vid-container {
+    width: 100%;
+    height: 300px!important;
+  }
+}
+
+.youtube-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.youtube-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#index-nav {
+  position: fixed;
+  top: 0;
+  z-index: 99;
 }
 

@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.2.0/dist/lux/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,400i,600,700">
+    <link rel="stylesheet" href="../../../assets/css/Animated-Radial-Progress-Bar.css">
     <link rel="stylesheet" href="../../../assets/css/Footer-Multi-Column-icons.css">
     <link rel="stylesheet" href="../../../assets/css/Hero-Clean-images.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
@@ -23,8 +25,20 @@
 
 <body class="sdg" style="font-family: Poppins, sans-serif;background: rgb(0,0,0);"><script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.14/fullpage.min.js" integrity="sha512-JEyqsBTR2woLAr79cq9g77k5aviE4ffJUwQ52NRRIsXQz5Xp2Am7vJD99hhc2q7lhvG0XCYs1cDGvl8d/t669Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.14/fullpage.css" integrity="sha512-j5rbjelirQpuvpLBGAo+rYp3mdBd75uZBqFdtBQytHxQEUWwdbLyDMpDuVm7xVV1MsuEKCyH7KtjLP75lH5+dQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <nav class="navbar navbar-light navbar-expand-md ai-nav" id="index-nav" style="width: 100%;">
+        <div class="container-fluid"><a class="navbar-brand" href="../etech/g6/sdg"><img src="data:image/png;base64,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" height="40px" style="border-radius: 7px;margin-right: 14px;">Group 6</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1" style="border-width: 0px;"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse d-md-flex justify-content-md-end" id="navcol-1">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="https://charlz.ga/etech/g6/sdg/#s2">Members</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://chng.it/VSCQRYmG">Petition</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://charlz.ga/etech/g6/sdg/ai">AI</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://sdg-chat.charlz.ga/">live forum</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <div id="fullpage">
-        <div data-aos="fade" data-aos-duration="900" class="section" style="background: url(&quot;../../../assets/img/on-sdg-16-peace-justice-and-strong-institutions.jpg&quot;) center / cover;">
+        <div data-aos="fade" data-aos-duration="900" class="section" style="background: linear-gradient(rgba(0,0,0,0.62), rgba(0,0,0,0.62) 100%), url(&quot;../../../assets/img/peace-justice-strong-institutions-part-260nw-2202077791-gigapixel-art-scale-8_00x.webp&quot;) center / cover;">
             <div class="d-flex flex-column justify-content-center align-items-center" style="min-height: 30rem;padding-left: 13px;">
                 <div class="container" data-aos="fade" data-aos-duration="400" style="max-width: 720px;border-color: rgb(2,85,139);border-left-width: 5px;border-left-style: solid;">
                     <h1 data-aos="fade-down" data-aos-duration="700" style="font-size: 51.384px;"><img src="data:image/png;base64,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" style="border-radius: 10px;margin-right: 11px;max-height: 58px;">SDG 16</h1>
@@ -33,12 +47,6 @@
                 </div>
                 <footer class="text-center">
                     <div class="container text-muted py-4 py-lg-5">
-                        <ul class="list-inline" style="margin-left: -13px;">
-                            <li class="list-inline-item me-4"><a class="link-secondary" href="#s2">Mission</a></li>
-                            <li class="list-inline-item me-4"><a class="link-secondary" href="#s3">Vision</a></li>
-                            <li class="list-inline-item"><a class="link-secondary" href="#s4">Goal</a></li>
-                            <li class="list-inline-item" style="margin-left: 14px;"><a class="link-secondary" href="#s5">How?</a></li>
-                        </ul>
                         <p data-aos="fade" data-aos-delay="3000" style="font-size: 13px;margin-top: 9px;margin-left: -13px;">Scroll down</p>
                     </div>
                 </footer>
@@ -46,10 +54,24 @@
         </div>
         <div class="section" style="background: #00689d;">
             <div class="d-flex flex-column justify-content-center align-items-center" style="min-height: 30rem;padding-left: 13px;">
-                <div class="container" style="padding-right: 2rem;padding-top: 2rem;padding-bottom: 2rem;">
-                    <h1 class="crime-rate-h1">As of 2022, Philippines ranks #86 out of 142 countries in the number of violence, with a crime index of&nbsp;<strong>42.36.</strong></h1>
-                    <p><a href="https://www.numbeo.com/crime/rankings_by_country.jsp" target="_blank"><span style="text-decoration: underline; color: rgb(255, 255, 255);">Source</span></a></p>
+                <div class="container" style="padding-right: 2rem;padding-top: 2rem;padding-bottom: 1rem;">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-9">
+                            <h1 class="crime-rate-h1">As of 2022, Philippines ranks #86 out of 142 countries in the number of violence, with a crime index of&nbsp;<strong>42.36.</strong></h1>
+                            <p class="text-center" style="margin-bottom: 0px;"><a href="https://www.numbeo.com/crime/rankings_by_country.jsp" target="_blank"><span style="text-decoration: underline; color: rgb(255, 255, 255);">Source</span></a></p>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3 d-flex flex-column justify-content-center align-items-center"><svg class="radial-progress web-design" data-percentage="100" viewBox="0 0 80 80">
+
+	<circle class="incomplete" cx="40" cy="40" r="35"></circle>
+	<circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 125;"></circle>
+	<text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">42.36</text>
+
+</svg>
+                            <h3 class="text-center" style="color: rgb(255,255,255);">Live Crime Index</h3>
+                        </div>
+                    </div>
                 </div>
+                <section id="skill"></section>
             </div>
         </div>
         <div class="section" style="background: linear-gradient(rgba(0,0,0,0.77), #000000c5 100%), url(&quot;../../../assets/img/close-up-of-antique-compass-on-map-dny59.png&quot;) center / cover;">
@@ -57,8 +79,8 @@
                 <div class="container" style="max-width: 720px;">
                     <div style="padding: 11px;border-color: rgb(2,85,139);border-left-width: 5px;border-left-style: solid;">
                         <h1 style="font-size: 51.384px;">Our Mission</h1>
-                        <p>By Karel &amp; Masagpag</p>
-                        <p style="margin-bottom: 0px;">(Placeholder text)<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis nisl quis maximus vulputate. Integer tempor elit ac enim dictum, id lobortis lectus vestibulum.</p>
+                        <p>By Karel &amp; Genevieve</p>
+                        <p style="margin-bottom: 0px;">Many crimes have occurred in our country in recent years. Data shows that crime rates are still increasing to this day. Murder, abuse, rape, and many more lingers beneath the bright facade of communities. To promote peaceful and inclusive societies is our mission.</p>
                     </div>
                 </div>
             </div>
@@ -69,7 +91,7 @@
                     <div style="padding: 11px;border-color: rgb(2,85,139);border-left-width: 5px;border-left-style: solid;">
                         <h1 style="font-size: 51.384px;">Our vision</h1>
                         <p>By Khim, Ed, &amp; Mabborang</p>
-                        <p style="margin-bottom: 0px;">(Placeholder text)<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis nisl quis maximus vulputate. Integer tempor elit ac enim dictum, id lobortis lectus vestibulum.</p>
+                        <p style="margin-bottom: 0px;">Our mission is to successfully build a society in which violence does not promulgate. A place where minorities, women, and children are safe, and does not receive any forms of violence and hate.</p>
                     </div>
                 </div>
             </div>
@@ -80,7 +102,7 @@
                     <div style="padding: 11px;border-color: rgb(2,85,139);border-left-width: 5px;border-left-style: solid;">
                         <h1 style="font-size: 51.384px;">Our goal</h1>
                         <p>By Nicole &amp; Salengua</p>
-                        <p style="margin-bottom: 0px;">(Placeholder text)<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis nisl quis maximus vulputate. Integer tempor elit ac enim dictum, id lobortis lectus vestibulum.</p>
+                        <p style="margin-bottom: 0px;">Our goal is to raise awareness about this ongoing issue. We want our country to be a safe place for everyone. A place where there is no fear of being around people.</p>
                     </div>
                 </div>
             </div>
@@ -93,7 +115,7 @@
                         <p>By Charlz</p>
                         <p style="margin-bottom: 0px;">We have prepared a few ways for us to achieve our goals. Although we do no guarantee that this will achieve our goals completely, we believe that these can help us move towards our goal.</p>
                     </div>
-                    <div><a class="btn btn-light float-end" role="button" href="how">read</a></div>
+                    <div><a class="btn btn-light float-end article-button" role="button" href="how">read</a></div>
                 </div>
             </div>
         </div>
@@ -102,7 +124,7 @@
         <div class="container py-4 py-lg-5 footer-head">
             <div class="row justify-content-center">
                 <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column item">
-                    <h3 class="fs-6 footer-head">our way</h3>
+                    <h3 class="fs-6 footer-head">Our Work</h3>
                     <ul class="list-unstyled">
                         <li><a class="link-secondary" href="https://charlz.ga/etech/g6/sdg/#s2">Mission</a></li>
                         <li><a class="link-secondary" href="https://charlz.ga/etech/g6/sdg/#s3">Vision</a></li>
@@ -112,9 +134,9 @@
                 <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column item">
                     <h3 class="fs-6 footer-head">Our team</h3>
                     <ul class="list-unstyled">
-                        <li><a class="link-secondary" href="#">About Us</a></li>
-                        <li><a class="link-secondary" href="#">Members</a></li>
-                        <li><a class="link-secondary" href="#">Special Thanks</a></li>
+                        <li><a class="link-secondary" href="about">About Us</a></li>
+                        <li><a class="link-secondary" href="members">Members</a></li>
+                        <li><a class="link-secondary" href="technologies">Technologies</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3 text-center text-lg-start d-flex flex-column align-items-center order-first align-items-lg-start order-lg-last item social">
@@ -152,9 +174,17 @@
 </script>
 
 <style>
-    #fp-nav ul li a span, 
+#fp-nav ul li a span, 
 .fp-slidesNav ul li a span {
     background: rgb(255, 255, 255);
+    transition: linear background 0.2s;
+}
+
+@media only screen and (max-width: 728px){
+    #fp-nav ul li a span, 
+    .fp-slidesNav ul li a span {
+        background: rgba(255, 255, 255, 0);
+    }
 }
 </style><!-- Messenger Chat Plugin Code -->
 <div id="fb-root"></div>
@@ -196,6 +226,7 @@ if (window.location == window.parent.location) {
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../../../assets/js/bs-init.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="../../../assets/js/Animated-Radial-Progress-Bar.js"></script>
 </body>
 
 </html>

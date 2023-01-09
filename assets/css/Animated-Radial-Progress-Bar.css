@@ -104,3 +104,37 @@ svg.ui-ux circle {
   margin-bottom: 0;
 }
 
+.thumb-img {
+  border-radius: 30px;
+}
+
+.cards {
+  margin-right: 10px;
+}
+
+.down-button:hover {
+  color: white;
+}
+
+@media (max-width: 1199px) {
+  #s2a-title {
+    margin-top: 100px;
+  }
+}
+
+.podcast-img {
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+.podcast-card {
+  border-radius: 30px;
+  box-shadow: 4px 4px 0px 0px rgb(47,60,147);
+}
+
+@media (max-width: 576px) {
+  #film-doc {
+    font-size: 45px!important;
+  }
+}
+

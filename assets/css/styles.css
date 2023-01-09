@@ -135,9 +135,34 @@ h1 {
   border-width: 0px;
   color: black;
   font-family: 'Poppins'!important;
+  transition: background-color linear 0.2s;
+  transition: color linear 0.2s;
+  transition: box-shadow ease 0.2s;
+  transition: transform linear 0.2s;
+  transition: all linear 0.2s;
 }
 
-.article-button:hover, .article-button:focus, .article-button:active, .article-button:active:hover {
+.article-button:hover, .article-button:active:hover {
+  border-radius: 0.8em;
+  background-color: var(--neon);
+  box-shadow: 0 0 1rem var(--neon), 5px 5px 0px 0px rgb(255, 255, 255);
+  color: white;
+  transition: all 100ms linear;
+  border-width: 0px!important;
+  transform: translateX(-5px) translateY(-5px);
+}
+
+.article-button:focus:hover {
+  border-radius: 0.8em;
+  background-color: var(--neon);
+  box-shadow: 0 0 1rem var(--neon), 0px 0px 0px 0px rgb(255, 255, 255);
+  transform: translateX(0px) translateY(0px);
+  color: white;
+  transition: all 100ms linear;
+  border-width: 0px!important;
+}
+
+.article-button:focus, .article-button:active {
   border-radius: 0.8em;
   background-color: var(--neon);
   box-shadow: 0 0 1rem var(--neon);
@@ -297,5 +322,9 @@ a:hover {
   position: fixed;
   top: 0;
   z-index: 99;
+}
+
+#index-nav {
+  transition: all ease 0.2s;
 }
 

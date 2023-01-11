@@ -138,3 +138,9 @@ svg.ui-ux circle {
   }
 }
 
+.table-white {
+  color: white!important;
+  font-family: 'Poppins';
+  font-size: small;
+}
+

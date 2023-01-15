@@ -328,3 +328,28 @@ a:hover {
   transition: all ease 0.2s;
 }
 
+/* width */
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background: rgb(59, 57, 57);
+  border-radius: 100px;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(60, 53, 87);
+}
+

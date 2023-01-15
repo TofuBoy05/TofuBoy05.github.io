@@ -144,3 +144,10 @@ svg.ui-ux circle {
   font-size: small;
 }
 
+.table-white-custom {
+  color: white;
+  font-family: 'Poppins';
+  font-size: small;
+  padding: 1.5rem;
+}
+

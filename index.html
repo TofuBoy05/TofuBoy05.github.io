@@ -48,7 +48,60 @@
                         <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
                         <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
                     </svg></a></div>
-            <p style="margin: 31px;text-align: center;max-width: 400px;">"Your entire sense of self-worth is predicated upon your belief that you matter to the universe."</p>
+            <p data-aos="fade" data-aos-duration="150" data-aos-once="true" id="quote" style="margin: 31px;text-align: center;max-width: 400px;"></p><button class="btn btn-light new-q" type="button" onclick="newQuote()" style="border-radius: 6px;">new quote</button><script>
+    const quote = document.getElementById("quote")
+
+    const quotes = [
+        '“And perhaps it is the greater grief, after all, to be left on earth when another is gone.”</br></br>― Madeline Miller, The Song of Achilles',
+        '“And perhaps it is the greater grief, after all, to be left on earth when another is gone.”</br></br>― Madeline Miller, The Song of Achilles',
+        "“That's the problem with memories: you can visit them, but you can't live in them.”</br></br>― Shaun David Hutchinson, We Are the Ants",
+        "“We remember the past, live in the present, and write the future.”</br></br>― Shaun David Hutchinson, We Are the Ants",
+        "“Your entire sense of self-worth is predicated upon your belief that you matter, that you matter to the universe. But you don't. Because we are the ants.”</br></br>― Shaun David Hutchinson, We Are the Ants",
+        "“Name one hero who was happy. You can't.”</br></br>― Madeline Miller, The Song of Achilles",
+        "“Name one hero who was happy. You can't.”</br></br>― Madeline Miller, The Song of Achilles",
+        "“Words were different when they lived inside of you.”</br></br>― Benjamin Alire Sáenz, Aristotle and Dante Discover the Secrets of the Universe",
+        "“I got to thinking that poems were like people. Some people you got right off the bat. Some people you just didn't get―and never would get.”</br></br>― Benjamin Alire Sáenz, Aristotle and Dante Discover the Secrets of the Universe",
+        "“The summer sun was not meant for boys like me. Boys like me belonged to the rain.”</br></br>― Benjamin Alire Sáenz, Aristotle and Dante Discover the Secrets of the Universe",
+        "“To be careful with people and with words was a rare and beautiful thing.”</br></br>― Benjamin Alire Sáenz, Aristotle and Dante Discover the Secrets of the Universe",
+        "“Maybe we just lived between hurting and healing.”</br></br>― Benjamin Alire Sáenz, Aristotle and Dante Discover the Secrets of the Universe",
+        "“We all fight our own private wars.”</br></br>― Benjamin Alire Sáenz, Aristotle and Dante Discover the Secrets of the Universe",
+        "“You matter more to the universe than you will ever know.”</br></br>― Benjamin Alire Sáenz, Aristotle and Dante Dive into the Waters of the World",
+        "“Mom, why didn't anybody tell me that love hurt so much?”</br>“If I had told you, would it have changed anything?”</br></br>― Benjamin Alire Sáenz, Aristotle and Dante Dive into the Waters of the World",
+        "“You can use a spear as a walking stick, but that will not change its nature.</br></br>― Madeline Miller, The Song of Achilles",
+        "“You can use a spear as a walking stick, but that will not change its nature.</br></br>― Madeline Miller, The Song of Achilles",
+        "“I don't always have to understand the people I love.”</br></br>― Benjamin Alire Sáenz, Aristotle and Dante Discover the Secrets of the Universe",
+        "“Sometimes, all you have to do is tell people the truth. They won't believe you. After that, they'll leave you alone.”</br></br>― Benjamin Alire Sáenz, Aristotle and Dante Discover the Secrets of the Universe",
+        "“You may be born into a family, but you walk into friendships. Some you’ll discover you should put behind you. Others are worth every risk.”</br></br>― Adam Silvera, They Both Die at the End",
+        "“Those seconds, half seconds, that the line of our gaze connected, were the only moment in my day that I felt anything at all.”</br></br>― Madeline Miller, The Song of Achilles",
+        "“There is no honour in betraying your friends.”</br></br>― Madeline Miller, The Song of Achilles",
+        "“I did not plan to live after he was gone.”</br></br>― Madeline Miller, The Song of Achilles",
+        "“There was nothing clever to say, so I said something foolish.”</br></br>― Madeline Miller, The Song of Achilles",
+        "“There was nothing in the world I wanted more than to know what he had not said.”</br></br>― Madeline Miller, The Song of Achilles",
+
+    ]
+
+    const random = Math.floor(Math.random() * quotes.length);
+
+    quote.innerHTML = (random, quotes[random]);
+
+    function newQuote() {
+        quote.style.opacity = "0"
+        const randomBtn = Math.floor(Math.random() * quotes.length);
+        
+        setTimeout(function(){
+            quote.innerHTML = (randomBtn, quotes[randomBtn]);
+            quote.style.opacity = "1"
+        }, 200); 
+        
+        
+    }
+</script>
+
+<style>
+    #quote {
+        transition: all 0.2s ease-in-out;
+    }
+</style>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>

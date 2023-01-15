@@ -151,3 +151,22 @@ svg.ui-ux circle {
   padding: 1.5rem;
 }
 
+.new-q:focus {
+  border: none;
+  box-shadow: none;
+}
+
+.new-q:hover {
+  border: none;
+  box-shadow: none;
+}
+
+.new-q {
+  border: none;
+  box-shadow: none;
+}
+
+.new-q:active, .new-q:active:focus, new-q:focus:hover {
+  box-shadow: none;
+}
+

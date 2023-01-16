@@ -170,3 +170,35 @@ svg.ui-ux circle {
   box-shadow: none;
 }
 
+.circle-1 {
+  height: 25rem;
+  width: 25rem;
+  position: absolute;
+  background-color: #238dba;
+  border-radius: 10000px;
+}
+
+.etech-welcome-container {
+}
+
+.blur-bg-container {
+  filter: blur(112px);
+}
+
+.landing-main-text {
+  z-index: 2;
+}
+
+.sdg-icon {
+  position: absolute;
+  width: 80px;
+  left: 20px;
+  bottom: 20px;
+}
+
+@media (max-width: 416px) {
+  .sdg-icon {
+    display: none;
+  }
+}
+

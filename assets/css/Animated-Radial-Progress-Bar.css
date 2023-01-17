@@ -202,3 +202,37 @@ svg.ui-ux circle {
   }
 }
 
+.github-hover:hover {
+  color: black;
+}
+
+@media (min-width: 300px) {
+  .infograph-1 {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .infograph-1 {
+    width: 500px;
+  }
+}
+
+@media (max-width: 991px) {
+  .bully-rate {
+    display: none!important;
+  }
+}
+
+@media (max-width: 991px) {
+  .blur-bg-container {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .section.s3-bg {
+    background: linear-gradient(#033a72, #080d22), #023e76;
+  }
+}
+

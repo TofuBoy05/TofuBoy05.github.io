@@ -205,10 +205,6 @@ a {
   float: right;
 }
 
-#ai-body {
-  background-color: black;
-}
-
 @media (max-width: 536px) {
   #premade-qs {
     display: none;

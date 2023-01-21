@@ -362,3 +362,9 @@ a:hover {
   border-radius: 10px!important;
 }
 
+@media (min-width:768px) {
+  .d-md-flex {
+    display: flex!important;
+  }
+}
+

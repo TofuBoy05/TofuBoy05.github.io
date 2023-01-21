@@ -236,3 +236,7 @@ svg.ui-ux circle {
   }
 }
 
+.blur-bg-container.force-show {
+  display: block!important;
+}
+
